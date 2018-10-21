@@ -6,7 +6,7 @@ Created:    Sept 2018.
 Comments:
 Notes:      -Script must be run with ACL that has proxy access if external facing Nessus.io servers are targeted
             -Ensure execution policy is set to unrestricted (Requires Administrative ACL)
-Author:     Paperclips.
+Author:     Paperclips
 Email:      Pwd9000@hotmail.co.uk
 TechNet:    https://gallery.technet.microsoft.com/site/search?f[0].Type=User&f[0].Value=paperclips
 Github:     https://github.com/Pwd9000-ML#>
