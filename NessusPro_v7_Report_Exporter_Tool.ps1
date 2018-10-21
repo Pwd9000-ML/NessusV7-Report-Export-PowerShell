@@ -12,7 +12,8 @@ TechNet:    https://gallery.technet.microsoft.com/site/search?f[0].Type=User&f[0
 Github:     https://github.com/Pwd9000-ML#>
 
 #------------------Allow Selfsign Cert + workaround force TLS 1.2 connections---------------------
-Set-ExecutionPolicy Unrestricted
+
+#Set-ExecutionPolicy Bypass
 
 add-type @"
 	using System.Net;
