@@ -13,7 +13,7 @@ Github:     https://github.com/Pwd9000-ML#>
 
 #------------------Allow Selfsign Cert + workaround force TLS 1.2 connections---------------------
 
-#Ensure correct execution policy is set to run script. Administrative permission is required to Set-ExecutionPolicy
+#Ensure correct execution policy is set to run script. Administrative permission is required to Set-ExecutionPolicy.
 #Set-ExecutionPolicy Bypass
 
 add-type @"
