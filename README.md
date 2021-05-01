@@ -19,9 +19,9 @@ Reports will be stored on the local system under the path of C:\Temp\
 
 The user will be prompted for the following input criteria when the script is run:  
 
-- Enter a full Nessus Scanner URL incl port (e.g. https://NessusServerFQDN:8834 ).  
+- Enter a full Nessus Scanner URL incl port (e.g. <https://NessusServerFQDN:8834> ).  
 - Enter a valid Username that has access to the nessus scanner URL provided.  
-- Enter a valid Password to the corresponding Uername provided.  
+- Enter a valid Password to the corresponding Username provided.  
 
 ## Comments
 
