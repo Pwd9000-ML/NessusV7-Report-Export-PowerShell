@@ -149,8 +149,9 @@ If ($answerexport -eq "Y") {
     #------------------Download the Reports------------------------------------------------------------
     $ExportUri = $StatusArray.DownloadUri
     $outputs = $StatusArray.ScanName
-    foreach ($i in 0..($ExportUri.Count - 1)) { 
-        Invoke-WebRequest -Uri $ExportUri[$i] -ContentType $ContentType -Headers $Header -Method $GETMethod -OutFile "C:\Temp\$($outputs[$i]).$format"                 
+    foreach ($i in 0..($ExportUri.Count - 1)) {
+        $dst = $outputs[$i].Replace("/","-")
+        Invoke-WebRequest -Uri $ExportUri[$i] -ContentType $ContentType -Headers $Header -Method $GETMethod -OutFile ".\$($dst).$format"                 
     }
     Get-childitem c:\Temp\* -include *.nessus -Recurse | Rename-Item -NewName {$_.name -replace 'nessus', 'xml'}
     Write-Host ""
